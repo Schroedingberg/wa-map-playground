@@ -9,8 +9,8 @@ let currentPopup: any = undefined;
 // Waiting for the API to be ready
 WA.onInit().then(() => {
     console.log('Scripting API ready');
-    console.log('Player tags: ',WA.player.tags)
-    WA.chat.sendChatMessage('Hello world', 'Mr Robot');
+    console.log('Player tags: ',WA.player.tags);
+    console.log('################');
     WA.room.area.onEnter('clock').subscribe(() => {
         const today = new Date();
         const time = today.getHours() + ":" + today.getMinutes();
